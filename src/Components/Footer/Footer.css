@@ -1,0 +1,194 @@
+.footer_container {
+  width: 100%;
+  height: 50vh;
+  background: #FCF6F6;
+  font-family: 'Roboto';
+}
+
+.footer_container .contact_det {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #06175B;
+}
+
+.footer_container .contact_det .address, .footer_container .contact_det .email, .footer_container .contact_det .phone {
+  font-size: 19px;
+  font-weight: bold;
+  height: 100%;
+  color: #06175B;
+  padding-left: 25px;
+  padding-right: 175px;
+  border-right: 1px solid #06175B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+}
+
+.footer_container .contact_det .address p, .footer_container .contact_det .email p, .footer_container .contact_det .phone p {
+  margin-left: 15px;
+}
+
+.footer_container .contact_det .address:last-child, .footer_container .contact_det .email:last-child, .footer_container .contact_det .phone:last-child {
+  border: none;
+}
+
+.footer_container .wrapper {
+  margin: 0 auto;
+  width: 70%;
+  height: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #06175B;
+  border-bottom: 1px solid #d1d0d0;
+}
+
+.footer_container .wrapper .sec {
+  width: 22%;
+  height: 100%;
+}
+
+.footer_container .wrapper .sec p {
+  line-height: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: #06175bd5;
+}
+
+.footer_container .wrapper .sec .title {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.footer_container .wrapper .sec_1 .title {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_container .wrapper .sec_1 .title img {
+  width: 60%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer_container .wrapper .sec_4 .input_submmit {
+  width: 100%;
+  height: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid #a0a0a0;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.footer_container .wrapper .sec_4 .input_submmit .submitt_icn {
+  width: 20%;
+  height: 100%;
+  background-color: #990012;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FCF6F6;
+  cursor: pointer;
+}
+
+.footer_container .wrapper .sec_4 .input_submmit input {
+  width: 80%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.footer_container .wrapper .sec_4 .input_submmit input:focus {
+  outline: none;
+}
+
+.footer_container .wrapper .sec_4 .social_links {
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_container .wrapper .sec_4 .social_links .icn_cont {
+  border: 1px solid #990012;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 22px;
+  color: #990012;
+}
+
+.footer_container .copyrights_developer {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_container .copyrights_developer p a {
+  color: initial;
+  text-decoration: none;
+  font-weight: bolder;
+  font-style: italic;
+}
+/*# sourceMappingURL=Footer.css.map */

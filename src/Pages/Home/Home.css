@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #FCF6F6;
+}
+
+.showcase {
+  width: 100%;
+  height: 92vh;
+  background: url(../../Assets/mechanic_2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #FCF6F6;
+}
+
+.showcase .color_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000000f1), color-stop(#00000077), to(#00000000));
+  background-image: linear-gradient(to right, #000000f1, #00000077, #00000000);
+}
+
+.showcase .content_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 45px;
+}
+
+.showcase .content_overlay h1 {
+  font-size: 80px;
+  font-family: 'Montserrat';
+  font-weight: 900;
+}
+
+.showcase .content_overlay h3 {
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-style: italic;
+}
+
+.showcase .showcase_btns {
+  margin-top: 45px;
+}
+
+.showcase .showcase_btns button {
+  padding: 15px 25px;
+  background-color: #990012;
+  border: none;
+  color: #FCF6F6;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.showcase .showcase_btns button .showc_btn_icns {
+  margin-right: 3px;
+  margin-bottom: 1px;
+}
+
+.showcase .showcase_btns button:last-child {
+  margin-left: 20px;
+  padding: 15px 45px;
+  background-color: #FCF6F6;
+  border: none;
+  color: #990012;
+  font-weight: bold;
+}
+
+.mobile_container {
+  width: 100%;
+  height: 20vh;
+  background-color: white;
+  font-family: 'Roboto';
+}
+
+.mobile_container .wrapper {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile_container h3 {
+  font-size: 35px;
+  font-weight: 300;
+  color: #3a3a3a;
+}
+
+.mobile_container button {
+  padding: 20px 50px;
+  background-color: #990012;
+  border: none;
+  color: #FCF6F6;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.feature_services {
+  width: 100%;
+  height: auto;
+  background: url("../../Assets/pattern.png");
+  background-position: center;
+  background-size: cover;
+  font-family: 'roboto';
+  padding: 50px 0px;
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+}
+
+.feature_services .wrapper {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.feature_services .wrapper h3 {
+  font-size: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: 'Roboto';
+  color: #06175B;
+  position: relative;
+}
+
+.feature_services .wrapper h3::before {
+  position: absolute;
+  content: '';
+  background-color: #990012;
+  height: 2px;
+  width: 100px;
+  left: auto;
+  right: -110px;
+  bottom: 10px;
+}
+
+.feature_services .wrapper .services_intro {
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #585858;
+}
+
+.feature_services .wrapper .services_container {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.feature_services .wrapper .services_container .service {
+  width: 373px;
+  height: 213px;
+  background-color: white;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 3px solid #990012;
+  padding: 39px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feature_services .wrapper .services_container .service:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.feature_services .wrapper .services_container .service small {
+  color: #06175B;
+  font-family: 'Roboto';
+}
+
+.feature_services .wrapper .services_container .service h4 {
+  color: #06175B;
+  font-size: 25px;
+}
+
+.feature_services .wrapper .services_container .service .book_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature_services .wrapper .services_container .service .book_img p {
+  color: #990012;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.feature_services .wrapper .services_container .service .service_icn {
+  width: 60px;
+  height: 60px;
+}
+
+.feature_services .wrapper .services_container .service .service_icn img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.quality_cheap {
+  width: 100%;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  background-color: #990012 !important;
+  background: url("../../Assets/pattern.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.quality_cheap .media {
+  width: 50%;
+  height: 100%;
+  padding: 20px 0px;
+  padding-left: 20px;
+}
+
+.quality_cheap .media img {
+  width: 100%;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.quality_cheap .content {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  color: #FCF6F6;
+}
+
+.quality_cheap .content .content_tagline {
+  font-size: 50px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.quality_cheap .content p {
+  font-family: 'Roboto';
+  font-size: 17px;
+}
+
+.quality_cheap .content .additional_services h4 {
+  font-family: 'Montserrat';
+  margin-top: 25px;
+  font-size: 22px;
+}
+
+.quality_cheap .content .additional_services .services_add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto';
+  margin-top: 20px;
+}
+
+.quality_cheap .content .additional_services .services_add span {
+  margin-bottom: 15px;
+}
+
+.quality_cheap .content .additional_services .services_add span .check_icn {
+  margin-right: 10px;
+}
+
+.quality_cheap .content .additional_services .book_services_button {
+  padding: 15px 45px;
+  font-weight: bold;
+  background-color: #FCF6F6;
+  color: #990012;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.best_world {
+  width: 100%;
+  height: 65vh;
+}
+
+.best_world .wrapper {
+  width: 100%;
+  height: 100%;
+  background: url("../../Assets/pattern.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.best_world .wrapper .media {
+  width: 50%;
+  height: 100%;
+  background: url("../../Assets/sam banner.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.best_world .wrapper .content {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  font-family: 'Roboto';
+  color: #06175B;
+}
+
+.best_world .wrapper .content h1 {
+  font-size: 50px;
+  font-family: 'Montserrat';
+  color: #06175B;
+}
+
+.best_world .wrapper .content p {
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.best_world .wrapper .content h4 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.best_world .wrapper .content ul li {
+  margin-bottom: 15px;
+}
+
+.best_world .wrapper .content .explore_parts {
+  padding: 15px 45px;
+  font-weight: bold;
+  background-color: #990012;
+  color: #FCF6F6;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.repair_estimator {
+  width: 100%;
+  height: auto;
+  background-color: #990012;
+  margin-top: 20px;
+}
+
+.repair_estimator .wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  background: url("../../Assets/pattern.png");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto';
+  color: #FCF6F6;
+}
+
+.repair_estimator .wrapper h1 {
+  font-size: 52px;
+}
+
+.repair_estimator .wrapper p {
+  margin-top: 15px;
+}
+
+.repair_estimator .wrapper span {
+  font-weight: bolder;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.repair_estimator .wrapper .estimator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.repair_estimator .wrapper .estimator .fields {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.repair_estimator .wrapper .estimator .fields select {
+  width: 48%;
+  height: 50px;
+  background: #FCF6F6;
+}
+
+.repair_estimator .wrapper .estimator .fields input {
+  width: 98%;
+  height: 50px;
+  border: 1px solid transparent;
+  background: #FCF6F6;
+}
+
+.repair_estimator .wrapper .estimator .fields input:focus {
+  outline: none;
+}
+
+.repair_estimator .wrapper .estimator .get_estimate_btn {
+  padding: 15px 45px;
+  font-weight: bold;
+  background-color: #FCF6F6;
+  color: #990012;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Home.css.map */
