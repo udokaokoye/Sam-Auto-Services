@@ -1,0 +1,219 @@
+.about_container {
+  width: 100%;
+  height: auto;
+}
+
+.about_container .about_showcase {
+  width: 100%;
+  height: 50vh;
+  background: url("../../Assets//mechanic_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.about_container .about_showcase .ovrly {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#990012), color-stop(#9900127e), to(#99001200));
+  background-image: linear-gradient(to right, #990012, #9900127e, #99001200);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_container .about_showcase .ovrly h1 {
+  font-size: 65px;
+  font-family: 'Roboto';
+  margin-left: 20%;
+}
+
+.about_container .brief_intro {
+  width: 100%;
+  height: 50vh;
+  background: url("../../Assets/pattern.png");
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.about_container .brief_intro .wrapper {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about_container .brief_intro .wrapper .content {
+  width: 50%;
+  height: 100%;
+  font-family: 'Roboto';
+  color: #06175B;
+}
+
+.about_container .brief_intro .wrapper .content h1 {
+  font-size: 38px;
+  margin-bottom: 22px;
+}
+
+.about_container .brief_intro .wrapper .content p {
+  line-height: 30px;
+}
+
+.about_container .brief_intro .wrapper .media {
+  width: 45%;
+  height: 100%;
+  background: url("../../Assets/mechanic_5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about_container .choose_us {
+  width: 100%;
+  height: 60vh;
+  background-color: #990012 !important;
+  background: url("../../Assets/pattern.png");
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #FCF6F6;
+}
+
+.about_container .choose_us .media {
+  width: 60%;
+  height: 100%;
+  background: url("../../Assets/mechanic_6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about_container .choose_us .content {
+  width: 30%;
+  height: 100%;
+  font-family: 'Roboto';
+}
+
+.about_container .choose_us .content h1 {
+  font-size: 36px;
+  position: relative;
+}
+
+.about_container .choose_us .content h1::before {
+  position: absolute;
+  content: '';
+  background-color: #FCF6F6;
+  height: 2px;
+  width: 100px;
+  left: auto;
+  right: 175px;
+  bottom: 10px;
+}
+
+.about_container .choose_us .content .reasons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 35px;
+}
+
+.about_container .choose_us .content .reasons .icn {
+  width: 15%;
+}
+
+.about_container .choose_us .content .reasons .icn img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about_container .choose_us .content .reasons .cnt {
+  width: 78%;
+}
+
+.about_container .choose_us .content .reasons .cnt h3 {
+  font-size: 22px;
+}
+
+.about_container .choose_us .content .reasons .cnt p {
+  margin-top: 5px;
+}
+
+.about_container .satisfaction {
+  width: 100%;
+  height: auto;
+  background: url("../../Assets//pattern.png");
+  padding: 55px 0px;
+}
+
+.about_container .satisfaction .wrapper {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Roboto';
+}
+
+.about_container .satisfaction .wrapper .sec {
+  width: 20%;
+  height: 100%;
+}
+
+.about_container .satisfaction .wrapper .sec h1 {
+  font-size: 39px;
+  color: #06175B;
+}
+
+.about_container .satisfaction .wrapper .sec h1 span {
+  color: #990012;
+}
+
+.about_container .satisfaction .wrapper .sec .icn {
+  width: 40%;
+  height: 80px;
+}
+
+.about_container .satisfaction .wrapper .sec .icn img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about_container .satisfaction .wrapper .sec h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #06175B;
+}
+
+.about_container .satisfaction .wrapper .sec p {
+  line-height: 26px;
+  color: #575757;
+}
+/*# sourceMappingURL=AboutUs.css.map */

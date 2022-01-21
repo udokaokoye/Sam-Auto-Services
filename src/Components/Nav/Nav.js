@@ -6,11 +6,11 @@ const Nav = () => {
         <div className='nav_container'>
             <div className="nav_wrapper">
                 <div className="logo">
-                    <img src={require('../../Assets/logo1.png')} alt="" />
+                    {/* <img src={require('../../Assets/logo4.png')} alt="" /> */}
                 </div>
                 <div className="links">
-                    <Link className='rct_link active_link'><span>Home</span></Link>
-                    <Link className='rct_link'><span>About Us</span></Link>
+                    <Link to='/' className='rct_link active_link'><span>Home</span></Link>
+                    <Link to='/about' className='rct_link'><span>About Us</span></Link>
                     <Link className='rct_link'><span>Services</span></Link>
                     <Link className='rct_link'><span>Contact Us</span></Link>
                     <Link className='rct_link'><span>Parts</span></Link>

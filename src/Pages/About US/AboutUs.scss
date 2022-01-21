@@ -1,0 +1,206 @@
+$main-color: #990012;
+$color2: #FCF6F6;
+$text-color: #06175B;
+
+.about_container {
+    width: 100%;
+    height: auto;
+    .about_showcase {
+        width: 100%;
+        height: 50vh;
+        background: url('../../Assets//mechanic_3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        .ovrly {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+                to right, 
+                #990012, #9900127e, #99001200
+                        );
+
+            color: white;
+            display: flex;
+            align-items: center;
+
+            h1 {
+                font-size: 65px;
+                font-family: 'Roboto';
+                margin-left: 20%;
+            }
+        }
+
+    }
+
+    .brief_intro {
+        width: 100%;
+        height: 50vh;
+        // background-color: $text-color;
+        background: url('../../Assets/pattern.png');
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        .wrapper {
+            width: 70%;
+            height: 100%;
+            margin: 0 auto;
+            // background-color: $main-color;
+            display: flex;
+            justify-content: space-between;
+
+            .content {
+                width: 50%;
+                height: 100%;
+                // background-color: green;
+                font-family: 'Roboto';
+                color: $text-color;
+                
+                h1 {
+                    font-size: 38px;
+                    margin-bottom: 22px;
+                }
+
+                p {
+                    line-height: 30px;
+                }
+            }
+
+            .media {
+                width: 45%;
+                height: 100%;
+                background: url('../../Assets/mechanic_5.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .choose_us{
+        width: 100%;
+        height: 60vh;
+        background-color: $main-color !important;
+        background: url('../../Assets/pattern.png');
+        padding: 25px;
+        display: flex;
+        justify-content: flex-end;
+        color: $color2;
+        .media {
+            width: 60%;
+            height: 100%;
+            background: url('../../Assets/mechanic_6.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .content {
+            // background: blue;
+            width: 30%;
+            height: 100%;
+            font-family: 'Roboto';
+
+            h1 {
+                font-size: 36px;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    background-color: $color2;
+                    height: 2px;
+                    width: 100px;
+                    left: auto;
+                    right: 175px;
+                    bottom: 10px;
+                }
+            }
+
+            .reasons {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 35px;
+
+                .icn {
+                    width: 15%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .cnt {
+                    width: 78%;
+                    h3 {
+                        font-size: 22px;
+                    }
+                    p {
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .satisfaction {
+        width: 100%;
+        height: auto;
+        background: url('../../Assets//pattern.png');
+        padding: 55px 0px;
+
+        .wrapper {
+            width: 70%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            // background-color: $main-color;
+            justify-content: space-between;
+            font-family: 'Roboto';
+
+            .sec {
+                width: 20%;
+                height: 100%;
+                // background-color: $text-color;
+
+                h1 {
+                    font-size: 39px;
+                    color: $text-color;
+
+                    span {
+                        color: $main-color;
+                    }
+                }
+
+                .icn {
+                    width: 40%;
+                    height: 80px;
+                    // background-color: yellow;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                h4 {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: $text-color;
+                }
+
+                p {
+                    line-height: 26px;
+                    color: rgb(87, 87, 87);
+                }
+            }
+        }
+    }
+}

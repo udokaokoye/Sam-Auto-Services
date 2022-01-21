@@ -8,7 +8,7 @@ const Home = () => {
             <div className="showcase">
                 <div className="color_overlay"></div>
                 <div className="content_overlay">
-                    <h1>SAM'S AUTO SERVICES</h1>
+                    <h1>SAM'S AUTO TECH</h1>
                     <h3>Your Best Auto Shop With Options</h3>
 
                     <div className="showcase_btns">
@@ -135,7 +135,7 @@ const Home = () => {
                 <div className="wrapper">
                     <div className="content">
                         <h1>Best Of Both Worlds!</h1>
-                        <p>Why go to the auto shop to get parts? With Sam's Auto Services you get the best of both worlds with our Auto Services and online part sales</p>
+                        <p>Why go to the auto shop to get parts? With Sams Auto Tech you get the best of both worlds with our Auto Services and online part sales</p>
 
                         <h4>Parts include:</h4>
                         <ul>

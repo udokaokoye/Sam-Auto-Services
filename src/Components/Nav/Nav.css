@@ -35,13 +35,10 @@
 .nav_container .nav_wrapper .logo {
   width: 10%;
   height: inherit;
-}
-
-.nav_container .nav_wrapper .logo img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background: url("../../Assets/logo4.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .nav_container .nav_wrapper .links {
