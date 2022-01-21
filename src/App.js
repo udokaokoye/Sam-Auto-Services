@@ -7,6 +7,7 @@ import Footer from './Components/Footer/Footer';
 import Nav from './Components/Nav/Nav';
 import AboutUs from './Pages/About US/AboutUs';
 import Home from "./Pages/Home/Home";
+import Services from './Pages/Services/Services';
 
 function App() {
   return (
@@ -21,7 +22,12 @@ function App() {
         <Route key={'/about'} exact path={'/about'}>
           <Nav />
           <AboutUs />
-          {/* <br /> */}
+          <Footer />
+        </Route>
+
+        <Route key={'/services'} exact path={'/services'}>
+          <Nav />
+          <Services />
           <Footer />
         </Route>
       </React.Fragment>

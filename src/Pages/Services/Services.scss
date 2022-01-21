@@ -1,0 +1,140 @@
+$main-color: #990012;
+$color2: #FCF6F6;
+$text-color: #06175B;
+
+.services_container {
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto';
+
+
+    .services_showcase {
+        width: 100%;
+        height: 50vh;
+        background: url('../../Assets//mechanic_8.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        .ovrly {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+                to right, 
+                #990012, #9900127e, #99001200
+                        );
+
+            color: white;
+            display: flex;
+            align-items: center;
+
+            h1 {
+                font-size: 65px;
+                font-family: 'Roboto';
+                margin-left: 20%;
+            }
+        }
+
+    }
+
+    .services_offer {
+        width: 100%;
+        height: auto;
+        background: url('../../Assets/pattern.png');
+        padding: 65px 0px;
+
+        .wrapper {
+            width: 70%;
+            height: 100%;
+            margin: 0 auto;
+            // background: $main-color;
+
+            h1 {
+                font-size: 42px;
+                color: $text-color;
+                // text-transform: uppercase;
+            }
+            p {
+                font-size: 19px;
+                color: $text-color;
+                margin-top: 10px;
+            }
+
+            .services_container{ 
+                margin-top: 45px;
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-columns: repeat(3, 1fr);
+                // grid-template-columns: auto;
+    
+                .service {
+                    width: 373px;
+                    height: 213px;
+                    background-color: white;
+                    margin-bottom: 10px;
+                    transition: all 0.3s ease-in-out;
+                    border-bottom: 3px solid $main-color;
+                    padding: 39px 35px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    &:hover {
+                        transform: scale(1.07);
+                    }
+    
+                    small {
+                        color: $text-color;
+                        font-family: 'Roboto';
+                    }
+    
+                    h4 {
+                        color: $text-color;
+                        font-size: 25px;
+                    }
+    
+                    .book_img {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        
+                        p {
+                            color: $main-color;
+                            font-weight: bold;
+                            cursor: pointer;
+                        }
+                    }
+    
+                    .service_icn {
+                        width: 60px;
+                        height: 60px;
+                        // background-color: red;
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+
+            .add_services {
+                margin-top: 35px;
+                background: url('../../Assets/pattern.png');
+
+                h1 {
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 19px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

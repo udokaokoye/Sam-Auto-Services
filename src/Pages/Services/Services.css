@@ -1,0 +1,152 @@
+.services_container {
+  width: 100%;
+  height: auto;
+  font-family: 'Roboto';
+}
+
+.services_container .services_showcase {
+  width: 100%;
+  height: 50vh;
+  background: url("../../Assets//mechanic_8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.services_container .services_showcase .ovrly {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#990012), color-stop(#9900127e), to(#99001200));
+  background-image: linear-gradient(to right, #990012, #9900127e, #99001200);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services_container .services_showcase .ovrly h1 {
+  font-size: 65px;
+  font-family: 'Roboto';
+  margin-left: 20%;
+}
+
+.services_container .services_offer {
+  width: 100%;
+  height: auto;
+  background: url("../../Assets/pattern.png");
+  padding: 65px 0px;
+}
+
+.services_container .services_offer .wrapper {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.services_container .services_offer .wrapper h1 {
+  font-size: 42px;
+  color: #06175B;
+}
+
+.services_container .services_offer .wrapper p {
+  font-size: 19px;
+  color: #06175B;
+  margin-top: 10px;
+}
+
+.services_container .services_offer .wrapper .services_container {
+  margin-top: 45px;
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.services_container .services_offer .wrapper .services_container .service {
+  width: 373px;
+  height: 213px;
+  background-color: white;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 3px solid #990012;
+  padding: 39px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services_container .services_offer .wrapper .services_container .service:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.services_container .services_offer .wrapper .services_container .service small {
+  color: #06175B;
+  font-family: 'Roboto';
+}
+
+.services_container .services_offer .wrapper .services_container .service h4 {
+  color: #06175B;
+  font-size: 25px;
+}
+
+.services_container .services_offer .wrapper .services_container .service .book_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services_container .services_offer .wrapper .services_container .service .book_img p {
+  color: #990012;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.services_container .services_offer .wrapper .services_container .service .service_icn {
+  width: 60px;
+  height: 60px;
+}
+
+.services_container .services_offer .wrapper .services_container .service .service_icn img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.services_container .services_offer .wrapper .add_services {
+  margin-top: 35px;
+  background: url("../../Assets/pattern.png");
+}
+
+.services_container .services_offer .wrapper .add_services h1 {
+  margin-bottom: 15px;
+}
+
+.services_container .services_offer .wrapper .add_services p {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=Services.css.map */
