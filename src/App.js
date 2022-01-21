@@ -6,6 +6,7 @@ import {
 import Footer from './Components/Footer/Footer';
 import Nav from './Components/Nav/Nav';
 import AboutUs from './Pages/About US/AboutUs';
+import ContactUs from './Pages/Contact Us/ContactUs';
 import Home from "./Pages/Home/Home";
 import Services from './Pages/Services/Services';
 
@@ -29,6 +30,12 @@ function App() {
           <Nav />
           <Services />
           <Footer />
+        </Route>
+
+        <Route key={'/contact'} exact path={'/contact'}>
+          <Nav />
+          <ContactUs />
+          {/* <Footer /> */}
         </Route>
       </React.Fragment>
     </Router>

@@ -1,0 +1,154 @@
+$main-color: #990012;
+$color2: #FCF6F6;
+$text-color: #06175B;
+
+.contact_container {
+    width: 100%;
+    height: auto;
+
+    .contact_showcase {
+        width: 100%;
+        height: 50vh;
+        background: url('../../Assets//mechanic_5.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        .ovrly {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+                to right, 
+                #990012, #9900127e, #99001200
+                        );
+
+            color: white;
+            display: flex;
+            align-items: center;
+
+            h1 {
+                font-size: 65px;
+                font-family: 'Roboto';
+                margin-left: 20%;
+            }
+        }
+
+    }
+
+    .contact_form {
+        width: 100%;
+        height: auto;
+        border: 1px solid green;
+        font-family: 'Roboto';
+        background: url('../../Assets/pattern.png');
+        
+        .wrapper {
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 35px;
+
+            .form {
+                h1 {
+                    color:$text-color ;
+                    font-size: 35px;
+                }
+        
+                p {
+                    color: $text-color;
+                    margin-top: 10px;
+                }
+                .typ_reply {
+                    // margin-top: 2px;
+                    color: $main-color;
+                    font-weight: bolder;
+                    font-style: italic;
+                    margin-bottom: 35px;
+                }
+
+                width: 50%;
+                height: 100%;
+                // background: red;
+                // border: 1px solid black;
+                display: flex;
+                flex-direction: column;
+                input, textarea {
+                    width: 100%;
+                    height: 60px;
+                    margin-bottom: 25px;
+                    padding: 15px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                textarea {
+                    height: initial;
+                }
+
+                button {
+                    cursor: pointer;
+                    width: 250px;
+                    height: 60px;
+                    font-weight: bolder;
+                    background-color: $main-color;
+                    color: $color2;
+                    border: none;
+                    font-size: 15px;
+                }
+            }
+
+            .cont_info {
+                width: 45%;
+                height: 100%;
+                // background: blue;
+
+                h1 {
+                    color:$text-color ;
+                    font-size: 35px;
+                }
+        
+                p {
+                    color: $text-color;
+                    margin-top: 10px;
+                    margin-bottom: 35px;
+                }
+
+                .addr {
+                    display: flex;
+                    margin-bottom: 55px;
+
+                    .icn {
+                        font-size: 35px;
+                        color: $main-color;
+                    }
+                    .content {
+                        margin-left: 20px;
+                        p {
+                            margin: 0;
+                            &:first-child {
+                                font-weight: bolder;
+                                font-size: 25px;
+                            }
+
+                            &:last-child {
+                                color: rgb(66, 66, 66);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .map_view {
+        width: 100%;
+        height: 100vh;
+        background-color: $main-color;
+    }
+}
