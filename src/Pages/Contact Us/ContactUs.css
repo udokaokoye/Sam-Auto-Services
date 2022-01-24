@@ -37,7 +37,6 @@
 .contact_container .contact_form {
   width: 100%;
   height: auto;
-  border: 1px solid green;
   font-family: 'Roboto';
   background: url("../../Assets/pattern.png");
 }
@@ -158,6 +157,6 @@
 .contact_container .map_view {
   width: 100%;
   height: 100vh;
-  background-color: #990012;
+  margin-top: 45px;
 }
 /*# sourceMappingURL=ContactUs.css.map */

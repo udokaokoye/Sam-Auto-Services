@@ -4,10 +4,11 @@ $text-color: #06175B;
 
 .footer_container {
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     background: $color2;
     // margin-top: 25px;
     // border: 1px solid $main-color;
+    border-top: 1px solid $text-color;
     font-family: 'Roboto';
 
     .contact_det {
@@ -17,7 +18,7 @@ $text-color: #06175B;
         justify-content: center;
         border-bottom: 1px solid $text-color;
         .address, .email, .phone {
-            font-size: 19px;
+            font-size: 17px;
             font-weight: bold;
             height: 100%;
             color: $text-color;

@@ -1,0 +1,200 @@
+.appointment_container {
+  width: 100%;
+  height: auto;
+}
+
+.appointment_container .wrapper {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Roboto';
+}
+
+.appointment_container .wrapper h1 {
+  font-size: 55px;
+  color: #06175B;
+}
+
+.appointment_container .wrapper p {
+  font-size: 22px;
+  color: #06175B;
+}
+
+.appointment_container .wrapper h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.appointment_container .wrapper .personal_info {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.appointment_container .wrapper .personal_info input {
+  width: 33%;
+  height: 60px;
+  padding: 10px;
+}
+
+.appointment_container .wrapper .personal_info input:focus {
+  outline: none;
+}
+
+.appointment_container .wrapper .personal_info .lname, .appointment_container .wrapper .personal_info .phone {
+  margin-left: 20px;
+}
+
+.appointment_container .wrapper .appt_info {
+  width: 100%;
+}
+
+.appointment_container .wrapper .appt_info p {
+  font-size: 18px;
+}
+
+.appointment_container .wrapper .appt_info textarea {
+  display: none;
+}
+
+.appointment_container .wrapper .appt_info .methd_cnt {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.appointment_container .wrapper .appt_info .methd_cnt .methd span {
+  margin-left: 5px;
+}
+
+.appointment_container .wrapper .vehicle_info {
+  margin-top: 45px;
+}
+
+.appointment_container .wrapper .vehicle_info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.appointment_container .wrapper .vehicle_info .options {
+  width: 100%;
+}
+
+.appointment_container .wrapper .vehicle_info .options select {
+  width: 30%;
+  height: 60px;
+  padding: 10px;
+  font-size: 19px;
+}
+
+.appointment_container .wrapper .vehicle_info .options select:focus {
+  outline: none;
+}
+
+.appointment_container .wrapper .vehicle_info .options select:last-child, .appointment_container .wrapper .vehicle_info .options select:nth-child(2) {
+  margin-left: 20px;
+}
+
+.appointment_container .wrapper .reason {
+  margin-top: 45px;
+}
+
+.appointment_container .wrapper .reason p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.appointment_container .wrapper .reason textarea {
+  width: 100%;
+  height: 200px;
+  font-family: 'roboto';
+  padding: 10px;
+}
+
+.appointment_container .wrapper .reason textarea:focus {
+  outline: none;
+}
+
+.appointment_container .wrapper .date_time {
+  margin-top: 45px;
+}
+
+.appointment_container .wrapper .date_time .d_t_cnt {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.appointment_container .wrapper .date_time .d_t_cnt .date {
+  width: 45%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.appointment_container .wrapper .date_time .d_t_cnt .date input, .appointment_container .wrapper .date_time .d_t_cnt .date select {
+  width: 70%;
+  height: 100%;
+  font-size: 19px;
+}
+
+.appointment_container .wrapper .date_time .d_t_cnt .date input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.appointment_container .wrapper .date_time .d_t_cnt .date .icn {
+  width: 30%;
+  height: 100%;
+  background-color: #990012;
+  font-size: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FCF6F6;
+}
+
+.appointment_container .wrapper .alert_warning {
+  width: 100%;
+  height: 100px;
+  background-color: #FEFFCE;
+  margin-top: 45px;
+  border: 1px solid #06175B;
+  padding: 25px;
+}
+
+.appointment_container .wrapper .alert_warning p {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.appointment_container .wrapper button {
+  width: 300px;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  background-color: #990012;
+  border: none;
+  color: #FCF6F6;
+}
+/*# sourceMappingURL=Appointment.css.map */

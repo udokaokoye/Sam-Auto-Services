@@ -1,7 +1,8 @@
 .footer_container {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   background: #FCF6F6;
+  border-top: 1px solid #06175B;
   font-family: 'Roboto';
 }
 
@@ -18,7 +19,7 @@
 }
 
 .footer_container .contact_det .address, .footer_container .contact_det .email, .footer_container .contact_det .phone {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: bold;
   height: 100%;
   color: #06175B;

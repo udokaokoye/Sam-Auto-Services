@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faCheck, faTools } from '@fortawesome/free-solid-svg-icons';
 import './Home.css'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 const Home = () => {
     return (
         <div>
@@ -12,15 +13,15 @@ const Home = () => {
                     <h3>Your Best Auto Shop With Options</h3>
 
                     <div className="showcase_btns">
-                        <button> <FontAwesomeIcon className='showc_btn_icns' icon={faCalendarAlt} /> Book An Appointment</button>
-                        <button> <FontAwesomeIcon className='showc_btn_icns' icon={faTools} /> Services</button>
+                        <Link to='/appointment'><button className='bk_appt'><FontAwesomeIcon className='showc_btn_icns' icon={faCalendarAlt} /> Book An Appointment</button></Link>
+                        <button className='serv'> <FontAwesomeIcon className='showc_btn_icns' icon={faTools} /> Services</button>
                     </div>
                 </div>
             </div>
             <section className='mobile_container'>
                 <div className="wrapper">
                 <h3>Can't Come In? Don't worry, We Also Offer Mobile Serivices</h3>
-                <button> <FontAwesomeIcon className='showc_btn_icns' icon={faCalendarAlt} /> Book Mobile Service</button>
+                <Link to='/appointment'><button> <FontAwesomeIcon className='showc_btn_icns' icon={faCalendarAlt} /> Book Mobile Service</button></Link>
                 </div>
             </section>
             <section className="feature_services">
