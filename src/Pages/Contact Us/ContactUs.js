@@ -1,8 +1,39 @@
 import { faEnvelope, faMapMarkedAlt, faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, {useState} from 'react'
 import './ContactUs.css'
 const ContactUs = () => {
+    
+    const [name, setname] = useState('')
+    const [email, setemail] = useState('')
+    const [subject, setsubject] = useState('')
+    const [message, setmessage] = useState('')
+    const [phone, setphone] = useState('')
+
+    const contactFormHandler = () => {
+
+        if (name == "" || email == "" || subject == "" || message == "") {
+            alert("Please Fill In All Required Fields*")
+            return;
+        }
+        const url = "http://localhost/samautotech/contact.php";
+        const formData = new FormData;
+        formData.append('name', name)
+        formData.append('email', email)
+        formData.append('subject', subject)
+        formData.append('message', message)
+        formData.append('phone', phone)
+        fetch(url, {
+            method: "POST",
+            body: formData
+        }).then((res) => res.json()).then((data) => {
+            if (data == 'SUCCESS') {
+                alert("Message Sent Succefully - check for reply within 1 hour")
+            } else {
+                alert('We are having issues sending your message, please try again later.')
+            }
+        })
+    }
     return (
         <div className='contact_container'>
             <div className="contact_showcase">
@@ -17,13 +48,13 @@ const ContactUs = () => {
                         <h1>Drop Us A Message</h1>
                         <p>Fill in all required fields</p>
                         <p className="typ_reply">Typical Reply TIme: Within 1 hour</p>
-                        <input type="text" placeholder='Enter Name' />
-                        <input type="email" placeholder='Enter Email' />
-                        <input type="text" placeholder='Subject' />
-                        <textarea name="" id="" cols="30" rows="10" placeholder='Enter Message'></textarea>
-                        <input type="text" placeholder='Phone Number (optional but prefered)'/>
+                        <input onChange={(e) =>setname(e.target.value)} type="text" placeholder='Enter Name*' name='name' />
+                        <input onChange={(e) =>setemail(e.target.value)} type="email" placeholder='Enter Email*' />
+                        <input onChange={(e) =>setsubject(e.target.value)} type="text" placeholder='Subject*' />
+                        <textarea onChange={(e) =>setmessage(e.target.value)} name="" id="" cols="30" rows="10" placeholder='Enter Message*'></textarea>
+                        <input onChange={(e) =>setphone(e.target.value)} type="text" placeholder='Phone Number (optional but prefered)'/>
 
-                        <button>Send Message</button>
+                        <button onClick={() => contactFormHandler()}>Send Message</button>
                     </div>
                     <div className="cont_info">
                         <h1>Our Address</h1>

@@ -133,7 +133,9 @@ const Home = () => {
             </div>
 
             <div className="best_world">
-                <div className="wrapper">
+            <div className="media1">
+                        <img src={require('../../Assets/sam\ banner.png')} alt="" />
+                    </div>
                     <div className="content">
                         <h1>Best Of Both Worlds!</h1>
                         <p>Why go to the auto shop to get parts? With Sams Auto Tech you get the best of both worlds with our Auto Services and online part sales</p>
@@ -152,8 +154,10 @@ const Home = () => {
                         </ul>
                         <button className="explore_parts">Explore Parts</button>
                     </div>
-                    <div className="media"></div>
-                </div>
+                    <div className="media">
+                        <img src={require('../../Assets/sam\ banner.png')} alt="" />
+                    </div>
+
             </div>
 
             <div className="repair_estimator">

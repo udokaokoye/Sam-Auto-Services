@@ -26,6 +26,7 @@ $color2: #FCF6F6;
         // background-color: red;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin: 0 auto;
 
         .logo {
@@ -55,6 +56,11 @@ $color2: #FCF6F6;
             }
         }
 
+        .menu {
+            display: none;
+            font-size: 25px;
+        }
+
         .book_appt {
             // width: 10%;
             // background-color: brown;
@@ -74,4 +80,47 @@ $color2: #FCF6F6;
             }
         }
     }
+}
+
+@media only screen and (max-width: 1104px) {
+
+    .nav_container {
+        .nav_wrapper {
+            .links {
+                width: 70%;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 849px) {
+
+    .nav_container {
+        // display: none;
+        .nav_wrapper {
+            .links {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .nav_container {
+        // display: none;
+        .nav_wrapper {
+            .logo {
+                width: 20%;
+                background-size: 100%;
+            }
+        }
+    }
+
 }

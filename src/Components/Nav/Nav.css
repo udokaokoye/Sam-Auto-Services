@@ -29,6 +29,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
 }
 
@@ -60,6 +63,11 @@
   font-weight: bolder;
 }
 
+.nav_container .nav_wrapper .menu {
+  display: none;
+  font-size: 25px;
+}
+
 .nav_container .nav_wrapper .book_appt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,5 +88,27 @@
   cursor: pointer;
   font-family: 'Roboto';
   font-weight: 600;
+}
+
+@media only screen and (max-width: 1104px) {
+  .nav_container .nav_wrapper .links {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 849px) {
+  .nav_container .nav_wrapper .links {
+    display: none;
+  }
+  .nav_container .nav_wrapper .menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav_container .nav_wrapper .logo {
+    width: 20%;
+    background-size: 100%;
+  }
 }
 /*# sourceMappingURL=Nav.css.map */

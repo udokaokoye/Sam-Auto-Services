@@ -71,6 +71,17 @@
   margin-left: 5px;
 }
 
+.appointment_container .wrapper .appt_info input[type='text'] {
+  width: 33%;
+  height: 60px;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+.appointment_container .wrapper .appt_info input[type='text']:focus {
+  outline: none;
+}
+
 .appointment_container .wrapper .vehicle_info {
   margin-top: 45px;
 }
@@ -148,11 +159,6 @@
   width: 70%;
   height: 100%;
   font-size: 19px;
-}
-
-.appointment_container .wrapper .date_time .d_t_cnt .date input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
 }
 
 .appointment_container .wrapper .date_time .d_t_cnt .date .icn {
