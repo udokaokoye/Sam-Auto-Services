@@ -36,7 +36,7 @@
 
 .about_container .brief_intro {
   width: 100%;
-  height: 70vh;
+  height: auto;
   background: url("../../Assets/pattern.png");
   padding-top: 25px;
   padding-bottom: 25px;
@@ -72,7 +72,7 @@
 
 .about_container .brief_intro .wrapper .media {
   width: 45%;
-  height: 100%;
+  height: 500px;
   background: url("../../Assets/mechanic_5.jpg");
   background-position: center;
   background-size: cover;
@@ -81,7 +81,7 @@
 
 .about_container .choose_us {
   width: 100%;
-  height: 70vh;
+  height: auto;
   background-color: #990012 !important;
   background: url("../../Assets/pattern.png");
   padding: 25px;
@@ -96,7 +96,7 @@
 
 .about_container .choose_us .media {
   width: 60%;
-  height: 100%;
+  height: 500px;
   background: url("../../Assets/mechanic_6.jpg");
   background-position: center;
   background-size: cover;
@@ -204,5 +204,64 @@
 .about_container .satisfaction .wrapper .sec p {
   line-height: 26px;
   color: #575757;
+}
+
+@media only screen and (max-width: 704px) {
+  .about_container .about_showcase {
+    height: 40vh;
+  }
+  .about_container .about_showcase .ovrly h1 {
+    font-size: 45px;
+    margin-left: 25px;
+  }
+  .about_container .brief_intro .wrapper {
+    width: 90%;
+    display: block;
+  }
+  .about_container .brief_intro .wrapper .media1 {
+    width: 100%;
+    height: 300px;
+    background: url("../../Assets/mechanic_5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .about_container .brief_intro .wrapper .media {
+    display: none;
+  }
+  .about_container .brief_intro .wrapper .content {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .about_container .choose_us {
+    display: block;
+  }
+  .about_container .choose_us .media {
+    display: none;
+  }
+  .about_container .choose_us .media1 {
+    width: 100%;
+    height: 300px;
+    background: url("../../Assets/mechanic_6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .about_container .choose_us .content {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .about_container .satisfaction {
+    padding: 0;
+  }
+  .about_container .satisfaction .wrapper {
+    width: 100%;
+    padding: 25px;
+    display: block;
+  }
+  .about_container .satisfaction .wrapper .sec {
+    width: 100%;
+    margin-top: 25px;
+  }
 }
 /*# sourceMappingURL=AboutUs.css.map */

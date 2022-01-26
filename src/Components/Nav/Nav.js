@@ -1,11 +1,31 @@
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import './Nav.css'
 const Nav = () => {
+    const [sidebar, setsidebar] = useState(false)
     return (
         <div className='nav_container'>
+
+            <div className="side_bar" style={{display: sidebar ? 'block' : 'none'}}>
+                <div className="wrapper">
+                        <div className="logo">
+                            <FontAwesomeIcon onClick={() => setsidebar(false)} className='side_close' icon={faTimes} color='white' />
+                        </div>
+
+                        <div className="links">
+                            <Link to='/' className='rct_link active_link'><span>Home</span></Link>
+                            <Link to='/about' className='rct_link'><span>About Us</span></Link>
+                            <Link to='/services' className='rct_link'><span>Services</span></Link>
+                            <Link to='/contact' className='rct_link'><span>Contact Us</span></Link>
+                            <Link className='rct_link'><span>Parts</span></Link>
+                            <div className="book_appt">
+                            <Link to='/appointment'><button>Book An Appointment</button></Link>
+                            </div>
+                        </div>
+                </div>
+            </div>
             <div className="nav_wrapper">
                 <div className="logo">
                     {/* <img src={require('../../Assets/logo4.png')} alt="" /> */}
@@ -21,8 +41,10 @@ const Nav = () => {
                     </div>
                 </div>
                 
-                <div className="menu"><FontAwesomeIcon icon={faBars} /></div>
+                <div onClick={() => {setsidebar(!sidebar)}} className="menu"><FontAwesomeIcon icon={faBars} /></div>
             </div>
+
+            
         </div>
     )
 }

@@ -70,6 +70,23 @@ $text-color: #06175B;
                     margin-bottom: 35px;
                 }
 
+                .messgae_view {
+                    display: none;
+                    width: 70%;
+                    height: 100px;
+                    background-color: $main-color;
+                    margin-bottom: 25px;
+                    border-radius: 8px;
+                    padding-left: 10px;
+                    display: flex;
+                    align-items: center !important;
+
+                    p {
+                        color: $color2;
+                        font-weight: bold;
+                    }
+                }
+
                 width: 50%;
                 height: 100%;
                 // background: red;
@@ -152,4 +169,54 @@ $text-color: #06175B;
         margin-top: 45px;
         // background-color: $main-color;
     }
+}
+
+@media only screen and (max-width: 719px) { 
+.contact_showcase {
+    height: 40vh !important;
+
+            .ovrly {
+                h1 {
+                    font-size: 45px !important;
+                    margin-left: 25px !important;
+                }
+            }
+}
+
+.contact_form {
+    .wrapper {
+        display: block !important;
+
+        .form {
+            width: 100% !important;
+        }
+
+        .messgae_view {
+            width: 100% !important;
+        }
+
+        .cont_info {
+            margin-top: 30px !important;
+            width: 100% !important;
+
+            .addr {
+                .icn {
+                    font-size: 25px !important;
+                }
+
+                .content {
+                    p {
+                        &:first-child {
+                            font-size: 20px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.map_view {
+    height: 50vh !important;
+}
 }

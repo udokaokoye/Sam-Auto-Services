@@ -110,6 +110,12 @@
   margin-left: 20px;
 }
 
+.appointment_container .wrapper .vehicle_info .other_vehicle textarea {
+  width: 50%;
+  height: 60px;
+  margin-top: 15px;
+}
+
 .appointment_container .wrapper .reason {
   margin-top: 45px;
 }
@@ -180,7 +186,7 @@
 
 .appointment_container .wrapper .alert_warning {
   width: 100%;
-  height: 100px;
+  height: auto;
   background-color: #FEFFCE;
   margin-top: 45px;
   border: 1px solid #06175B;
@@ -202,5 +208,76 @@
   background-color: #990012;
   border: none;
   color: #FCF6F6;
+}
+
+@media only screen and (max-width: 704px) {
+  .appointment_container .wrapper {
+    width: 90%;
+  }
+  .appointment_container .wrapper h1 {
+    font-size: 35px;
+  }
+  .appointment_container .wrapper p {
+    font-size: 18px;
+  }
+  .appointment_container .wrapper .personal_info input {
+    display: block;
+    width: 100%;
+    font-size: 17px;
+  }
+  .appointment_container .wrapper .personal_info .lname, .appointment_container .wrapper .personal_info .phone {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+  .appointment_container .wrapper .appt_info input[type='text'] {
+    width: 100%;
+  }
+  .appointment_container .wrapper .appt_info .methd_cnt {
+    display: block;
+  }
+  .appointment_container .wrapper .appt_info .methd_cnt .methd span {
+    margin-left: 15px;
+  }
+  .appointment_container .wrapper .appt_info .methd_cnt .methd:last-child {
+    margin-top: 18px;
+  }
+  .appointment_container .wrapper .vehicle_info .other_vehicle textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 19px;
+  }
+  .appointment_container .wrapper .vehicle_info .options select {
+    display: block;
+    width: 100%;
+  }
+  .appointment_container .wrapper .vehicle_info .options select:last-child, .appointment_container .wrapper .vehicle_info .options select:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+  .appointment_container .wrapper .reason textarea {
+    font-size: 19px;
+  }
+  .appointment_container .wrapper .date_time .d_t_cnt {
+    display: block;
+  }
+  .appointment_container .wrapper .date_time .d_t_cnt .date {
+    width: 100%;
+  }
+  .appointment_container .wrapper .date_time .d_t_cnt .date input, .appointment_container .wrapper .date_time .d_t_cnt .date select {
+    min-width: 100%;
+  }
+  .appointment_container .wrapper .date_time .d_t_cnt .date input[type="date"] {
+    min-width: 100%;
+  }
+  .appointment_container .wrapper .date_time .d_t_cnt .date input[type="date"]::before {
+    content: attr(placeholder);
+    width: 100%;
+  }
+  .appointment_container .wrapper .date_time .d_t_cnt .date:last-child {
+    margin-top: 20px;
+  }
+  .appointment_container .wrapper .date_time .d_t_cnt .date .icn {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Appointment.css.map */

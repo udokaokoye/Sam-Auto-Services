@@ -38,7 +38,7 @@ $text-color: #06175B;
 
     .brief_intro {
         width: 100%;
-        height: 70vh;
+        height: auto;
         // background-color: $text-color;
         background: url('../../Assets/pattern.png');
         padding-top: 25px;
@@ -71,7 +71,7 @@ $text-color: #06175B;
 
             .media {
                 width: 45%;
-                height: 100%;
+                height: 500px ;
                 background: url('../../Assets/mechanic_5.jpg');
                 background-position: center;
                 background-size: cover;
@@ -82,7 +82,7 @@ $text-color: #06175B;
 
     .choose_us{
         width: 100%;
-        height: 70vh;
+        height: auto;
         background-color: $main-color !important;
         background: url('../../Assets/pattern.png');
         padding: 25px;
@@ -91,7 +91,7 @@ $text-color: #06175B;
         color: $color2;
         .media {
             width: 60%;
-            height: 100%;
+            height: 500px;
             background: url('../../Assets/mechanic_6.jpg');
             background-position: center;
             background-size: cover;
@@ -199,6 +199,80 @@ $text-color: #06175B;
                 p {
                     line-height: 26px;
                     color: rgb(87, 87, 87);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 704px) {
+
+    .about_container {
+        .about_showcase {
+            height: 40vh;
+
+            .ovrly {
+                h1 {
+                    font-size: 45px;
+                    margin-left: 25px;
+                }
+            }
+        }
+
+        .brief_intro  {
+            .wrapper {
+                width: 90%;
+                display: block;
+
+                .media1 {
+                    width: 100%;
+                    height: 300px ;
+                    background: url('../../Assets/mechanic_5.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                .media {
+                    display: none;
+                }
+
+                .content {
+                    width: 100%;
+                    margin-top: 25px;
+                }
+            }
+        }
+
+        .choose_us {
+            display: block;
+            .media {
+                display: none;
+            }
+            .media1 {
+                width: 100%;
+                height: 300px;
+                background: url('../../Assets/mechanic_6.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .content {
+                width: 100%;
+                margin-top: 25px;
+            }
+        }
+
+        .satisfaction {
+            padding: 0;
+            .wrapper {
+                width: 100%;
+                padding: 25px;
+                display: block;
+                .sec {
+                    width: 100%;
+                    margin-top: 25px;
                 }
             }
         }

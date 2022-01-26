@@ -2,6 +2,7 @@ import { faCalendarAlt, faClock } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, {useState, useEffect} from 'react'
 import './Appointment.css'
+import car_brands from '../../Components/carbrands'
 const Appointment = () => {
     const [fname, setfname] = useState('')
     const [lname, setlname] = useState('')
@@ -11,32 +12,20 @@ const Appointment = () => {
     const [v_make, setv_make] = useState('')
     const [v_model, setv_model] = useState('')
     const [v_year, setv_year] = useState('')
+    const [other_vehicle, setother_vehicle] = useState('')
     const [details, setdetails] = useState('')
     const [date, setdate] = useState('')
     const [address, setaddress] = useState('')
     const [time, settime] = useState('')
-    const [make, setmake] = useState([])
-    const [makeid, setmakeid] = useState('0')
     const [model, setmodel] = useState([])
-
-    useEffect(() => {
-        fetchMake()
-        // console.log(generateArrayOfYears())
-    }, [])
-
+    const [other_checkbox, setother_checkbox] = useState(false)
+    const timeInterval = ["11:00 Am", "12:00 Pm", "1:00 Pm", "2:00 Pm", "3:00 Pm", "4:00 Pm", "5:00 Pm", "6:00 Pm", "7:00 Pm"]
     useEffect(() => {
         if (v_make !== '') {
             fetchModel()
         }
     }, [v_make])
     
-
-    
-    const fetchMake = () => {
-        fetch('https://vpic.nhtsa.dot.gov/api/vehicles/getallmakes?format=json').then((res) => res.json()).then((data) => {
-            setmake(data.Results)
-        })
-    }
 
     const fetchModel = () => {
         fetch(`https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformake/${v_make}?format=json`).then((res) => res.json()).then((data) => {
@@ -56,13 +45,24 @@ const Appointment = () => {
       }
 
     const bookNowHandler = () => {
-        if (fname == '' || lname == '' || email == '' || phone == '' || type == '' || v_make == 'default' || v_model == 'default' || v_year == 'default' || v_make == '' || v_model == '' || v_year == '' || details == '' || date == '' || time == '') {
-            alert("Please Fill In All Fields")
-            return false;
+
+        if (other_checkbox) {
+            if (other_checkbox && other_vehicle == '') {
+                alert("Please Make Sure To Fill In All Fields");
+                return;
+            }else if (fname == '' || lname == '' || email == '' || phone == '' || type == '' || details == '' || date == '' || time == '') {
+                alert("Please Make Sure To Fill In All Fields")
+                return false;
+            }
+        } else if (fname == '' || lname == '' || email == '' || phone == '' || type == '' || v_make == 'default' || v_model == 'default' || v_year == 'default' || v_make == '' || v_model == '' || v_year == '' || details == '' || date == '' || time == '') {
+            alert("Please Make Sure To Fill In All Fields");
+            return;
         }
 
+        
+
         if(type == 'mobile' && address == '') {
-            alert("Please Fill In All Fields")
+            alert("Please Make Sure To Fill In All Fields")
             return false;
         }
 
@@ -76,9 +76,10 @@ const Appointment = () => {
         formData.append("phone", phone);
         formData.append("type", type);
         formData.append("address", type == 'default' ? '' : address);
-        formData.append("v_make", v_make);
-        formData.append("v_model", v_model);
-        formData.append("v_year", v_year);
+        formData.append("v_make", other_checkbox ? '' : v_make);
+        formData.append("v_model", other_checkbox ? '' : v_model);
+        formData.append("v_year", other_checkbox ? '' : v_year);
+        formData.append("other_vehicle", other_checkbox ? other_vehicle : '');
         formData.append("details", details);
         formData.append("date", date);
         formData.append("time", time);
@@ -131,11 +132,11 @@ const Appointment = () => {
                 <div className="vehicle_info">
                     <h3>Vehicle Information</h3>
                     <p>Please provide required information about vehicle</p>
-                    <div className="options">
+                    <div style={{display: other_checkbox ? 'none' : 'block'}} className="options">
                         <select onChange={(e) => setv_make(e.target.value)}>
                             <option value="default">Choose Make*</option>
-                            {make.map(mk => (
-                                <option key={mk.Make_Name}>{mk.Make_Name}</option>
+                            {car_brands.map(mk => (
+                                <option key={mk}>{mk}</option>
                             ))}
                         </select>
                         <select onChange={(e) => setv_model(e.target.value)}>
@@ -151,6 +152,11 @@ const Appointment = () => {
                             ))}
                         </select>
                     </div>
+                        <br />
+                        <div><input type="checkbox" checked={other_checkbox} onChange={() => setother_checkbox(!other_checkbox)} /> other vehicle</div>
+                    <div style={{display: other_checkbox ? 'block' : 'none'}} className="other_vehicle">
+                        <textarea onChange={(e) => setother_vehicle(e.target.value)} placeholder='Please Enter Vehicle Make, Model and year*'></textarea>
+                    </div>
                 </div>
 
                 <div className="reason">
@@ -164,11 +170,12 @@ const Appointment = () => {
                     <h3>Select Date & Time</h3>
 
                     <div className="d_t_cnt">
-                        <div className="date"><input id='date' type="date" onChange={(e) => setdate(e.target.value)} /> <label for='date' className="icn"><FontAwesomeIcon icon={faCalendarAlt} /></label></div>
+                        <div className="date"><input placeholder='Enter Date' id='date' type="date" onChange={(e) => setdate(e.target.value)} /> <label for='date' className="icn"><FontAwesomeIcon icon={faCalendarAlt} /></label></div>
                         <div className="date"> 
                         <select onChange={(e) => settime(e.target.value)}>
-                            <option value={"11:00pm"}>11:00pm</option>
-                            <option value={"11:00pm"}>11:00pm</option>
+                            {timeInterval.map((time) => (
+                                <option value={time}>{time}</option>
+                            ))}
                         </select> 
                         <div className="icn"><FontAwesomeIcon icon={faClock} /></div>
                         </div>

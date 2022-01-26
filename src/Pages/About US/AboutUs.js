@@ -12,6 +12,7 @@ const AboutUs = () => {
 
             <div className="brief_intro">
                 <div className="wrapper">
+                <div className="media1"></div>
                     <div className="content">
                         <h1> A highly skilled mechanic for your car repair</h1>
 
@@ -27,6 +28,7 @@ const AboutUs = () => {
             </div>
 
             <div className="choose_us">
+            <div className="media1"></div>
                 <div className="content">
                     <h1>Why Choose Us</h1>
 

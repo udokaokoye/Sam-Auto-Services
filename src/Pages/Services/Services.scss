@@ -46,7 +46,7 @@ $text-color: #06175B;
         padding: 65px 0px;
 
         .wrapper {
-            width: 70%;
+            width: 80%;
             height: 100%;
             margin: 0 auto;
             // background: $main-color;
@@ -72,7 +72,7 @@ $text-color: #06175B;
                 // grid-template-columns: auto;
     
                 .service {
-                    width: 373px;
+                    width: 100%;
                     height: 213px;
                     background-color: white;
                     margin-bottom: 10px;
@@ -133,6 +133,94 @@ $text-color: #06175B;
                 p {
                     font-size: 19px;
                     margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1194px) {
+    .services_offer {
+        // display: none;
+        .wrapper {
+            width: 90% !important;
+            h1 {
+                font-size: 30px !important;
+            }
+
+            p {
+                font-size: 17px !important;
+            }
+
+            .services_container {
+                .service {
+                    h4 {
+                        font-size: 20px !important;
+                    }
+
+                    .book_img {
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+
+                    .service_icn {
+                        width: 50px !important;
+                        height: 50px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 719px) { 
+
+    .services_showcase {
+        height: 40vh !important;
+
+            .ovrly {
+                h1 {
+                    font-size: 45px !important;
+                    margin-left: 25px !important;
+                }
+            }
+    }
+
+    .services_offer {
+        width: 100% !important;
+        .wrapper {
+            h3 {
+                &::before {
+                    
+                }
+            }
+
+            p {
+            }
+
+            .services_container {
+                display: block !important;
+                grid-gap: 0px !important;
+                .service {
+                    padding: 25px !important;
+                    height: 190px !important;
+                    margin-bottom: 15px !important;
+                    h4 {
+                        font-size: 22px !important;
+                        font-weight: bolder !important;
+                    }
+
+                    .book_img {
+                        p {
+                            font-size: 18px !important;
+                        }
+                    }
+
+                    .service_icn {
+                        width: 40px !important;
+                        height: 40px !important;
+                    }
                 }
             }
         }

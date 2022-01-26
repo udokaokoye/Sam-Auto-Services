@@ -9,6 +9,7 @@ const ContactUs = () => {
     const [subject, setsubject] = useState('')
     const [message, setmessage] = useState('')
     const [phone, setphone] = useState('')
+    const [message_view, setmessage_view] = useState('')
 
     const contactFormHandler = () => {
 
@@ -28,9 +29,9 @@ const ContactUs = () => {
             body: formData
         }).then((res) => res.json()).then((data) => {
             if (data == 'SUCCESS') {
-                alert("Message Sent Succefully - check for reply within 1 hour")
+                setmessage_view("Message Sent Succefully - check for reply within 1 hour")
             } else {
-                alert('We are having issues sending your message, please try again later.')
+                setmessage_view('We are having issues sending your message, please try again later.')
             }
         })
     }
@@ -45,9 +46,13 @@ const ContactUs = () => {
             <div className="contact_form">
                 <div className="wrapper">
                     <div className="form">
+
                         <h1>Drop Us A Message</h1>
                         <p>Fill in all required fields</p>
                         <p className="typ_reply">Typical Reply TIme: Within 1 hour</p>
+                        <div style={{display: message_view !== '' ? 'block' : 'none'}} className="messgae_view">
+                            <p>{message_view}</p>
+                        </div>
                         <input onChange={(e) =>setname(e.target.value)} type="text" placeholder='Enter Name*' name='name' />
                         <input onChange={(e) =>setemail(e.target.value)} type="email" placeholder='Enter Email*' />
                         <input onChange={(e) =>setsubject(e.target.value)} type="text" placeholder='Subject*' />
