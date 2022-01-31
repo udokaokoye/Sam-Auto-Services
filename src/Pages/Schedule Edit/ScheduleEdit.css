@@ -1,0 +1,77 @@
+.edit_cont {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+.edit_cont .appt h3 {
+  font-size: 27px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.edit_cont .appt p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.edit_cont .appt p span {
+  font-weight: bold;
+}
+
+.edit_cont .appt input, .edit_cont .appt select {
+  width: 180px;
+  height: 40px;
+}
+
+.edit_cont .appt select {
+  margin-left: 25px;
+}
+
+.edit_cont .appt button {
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: green;
+  color: #FCF6F6;
+  border: none;
+  cursor: pointer;
+}
+
+.edit_cont .appt button:last-child {
+  margin-left: 25px;
+  background-color: red;
+}
+
+@media only screen and (max-width: 719px) {
+  .edit_cont {
+    width: 90%;
+  }
+  .edit_cont p {
+    margin-bottom: 19px !important;
+  }
+  .edit_cont .appt {
+    padding-top: 20px;
+  }
+  .edit_cont input {
+    display: block;
+    width: 100% !important;
+    height: 60px !important;
+  }
+  .edit_cont select {
+    width: 100% !important;
+    display: block;
+    margin-left: 0px !important;
+    margin-top: 25px;
+    height: 60px !important;
+  }
+  .edit_cont button {
+    display: block;
+  }
+  .edit_cont button:last-child {
+    margin-left: 0px !important;
+    margin-top: 25px;
+  }
+}
+/*# sourceMappingURL=ScheduleEdit.css.map */

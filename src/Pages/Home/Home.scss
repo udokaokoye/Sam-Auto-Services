@@ -78,6 +78,7 @@ body {
             border: none;
             color: $main-color;
             font-weight: bold;
+            cursor: pointer;
         }
     }
 }
@@ -168,7 +169,7 @@ body {
                 height: 213px;
                 background-color: white;
                 margin-bottom: 10px;
-                transition: all 0.3s ease-in-out;
+                // transition: all 0.3s ease-in-out;
                 border-bottom: 3px solid $main-color;
                 padding: 39px 35px;
                 display: flex;
@@ -197,6 +198,12 @@ body {
                         color: $main-color;
                         font-weight: bold;
                         cursor: pointer;
+                        text-decoration: none;
+
+                        a {
+                            text-decoration: none;
+                            color: inherit;
+                        }
                     }
                 }
 
@@ -220,6 +227,7 @@ body {
     width: 100%;
     height: auto;
     display: flex;
+    // align-items: center;
     margin: 0 auto;
     background-color: $main-color !important;
     background: url('../../Assets/pattern.png');
@@ -228,7 +236,7 @@ body {
 
     .media {
         width: 50%;
-        height: 100%;
+        height: 700px;
         // background-color: $main-color;
         padding: 20px 0px;
         padding-left: 20px;
@@ -270,11 +278,22 @@ body {
                 flex-direction: column;
                 font-family: 'Roboto';
                 margin-top: 20px;
-                span {
-                    margin-bottom: 15px;
-                    font-size: 15px;
-                    .check_icn {
+                p {
+                    font-size: 19px;
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+
+                    .icn {
+                        width: 40px;
+                        height: 40px;
                         margin-right: 10px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
                     }
                 }
             }
@@ -428,6 +447,12 @@ body {
                     &:focus {
                         outline: none;
                     }
+
+                    
+                }
+                textarea {
+                    width: 100%;
+                    height: 120px;
                 }
             }
 

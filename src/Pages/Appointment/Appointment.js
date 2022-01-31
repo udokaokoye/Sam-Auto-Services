@@ -25,6 +25,10 @@ const Appointment = () => {
             fetchModel()
         }
     }, [v_make])
+
+    useEffect(() => {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+          }, [])
     
 
     const fetchModel = () => {

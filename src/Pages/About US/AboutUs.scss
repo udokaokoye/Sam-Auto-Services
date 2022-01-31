@@ -67,6 +67,18 @@ $text-color: #06175B;
                 p {
                     line-height: 30px;
                 }
+
+                button {
+                    margin-top: 20px;
+                    width: 40%;
+                    height: 50px;
+
+                    background-color: $main-color;
+                    color: $color2;
+                    border: none;
+                    cursor: pointer;
+                    font-weight: bold;
+                }
             }
 
             .media {
@@ -143,6 +155,18 @@ $text-color: #06175B;
                         margin-top: 5px;
                     }
                 }
+            }
+
+            button {
+                margin-top: 30px;
+                width: 40%;
+                height: 50px;
+                background-color: $color2;
+                color: $main-color;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+                margin-left: 100px;
             }
         }
     }
@@ -240,6 +264,11 @@ $text-color: #06175B;
                 .content {
                     width: 100%;
                     margin-top: 25px;
+
+                    button {
+                        width: 100% !important;
+                        font-size: 18px;
+                    }
                 }
             }
         }
@@ -261,6 +290,12 @@ $text-color: #06175B;
             .content {
                 width: 100%;
                 margin-top: 25px;
+
+                button {
+                    width: 100% !important;
+                    margin-left: 0px!important;
+                    font-size: 18px;
+                }
             }
         }
 

@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .footer_container {
   width: 100%;
   height: auto;
@@ -48,6 +53,10 @@
 
 .footer_container .contact_det .address {
   padding-right: 175px;
+}
+
+.footer_container .contact_det .email {
+  padding-right: 100px;
 }
 
 .footer_container .wrapper {
@@ -119,6 +128,7 @@
   color: #FCF6F6;
   border: none;
   font-weight: bolder;
+  cursor: pointer;
 }
 
 .footer_container .wrapper .sec_4 .input_submmit {

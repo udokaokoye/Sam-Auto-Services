@@ -76,7 +76,7 @@ $text-color: #06175B;
                     height: 213px;
                     background-color: white;
                     margin-bottom: 10px;
-                    transition: all 0.3s ease-in-out;
+                    // transition: all 0.3s ease-in-out;
                     border-bottom: 3px solid $main-color;
                     padding: 39px 35px;
                     display: flex;
@@ -105,6 +105,11 @@ $text-color: #06175B;
                             color: $main-color;
                             font-weight: bold;
                             cursor: pointer;
+
+                            a {
+                                text-decoration: none;
+                                color: inherit;
+                            }
                         }
                     }
     
@@ -133,6 +138,20 @@ $text-color: #06175B;
                 p {
                     font-size: 19px;
                     margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+
+                    .icn {
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 10px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
                 }
             }
         }

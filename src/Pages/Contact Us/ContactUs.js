@@ -1,6 +1,6 @@
 import { faEnvelope, faMapMarkedAlt, faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './ContactUs.css'
 const ContactUs = () => {
     
@@ -10,6 +10,9 @@ const ContactUs = () => {
     const [message, setmessage] = useState('')
     const [phone, setphone] = useState('')
     const [message_view, setmessage_view] = useState('')
+    useEffect(() => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      }, [])
 
     const contactFormHandler = () => {
 

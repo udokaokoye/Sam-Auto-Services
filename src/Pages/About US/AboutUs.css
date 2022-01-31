@@ -70,6 +70,17 @@
   line-height: 30px;
 }
 
+.about_container .brief_intro .wrapper .content button {
+  margin-top: 20px;
+  width: 40%;
+  height: 50px;
+  background-color: #990012;
+  color: #FCF6F6;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .about_container .brief_intro .wrapper .media {
   width: 45%;
   height: 500px;
@@ -145,6 +156,18 @@
 
 .about_container .choose_us .content .reasons .cnt p {
   margin-top: 5px;
+}
+
+.about_container .choose_us .content button {
+  margin-top: 30px;
+  width: 40%;
+  height: 50px;
+  background-color: #FCF6F6;
+  color: #990012;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 100px;
 }
 
 .about_container .satisfaction {
@@ -233,6 +256,10 @@
     width: 100%;
     margin-top: 25px;
   }
+  .about_container .brief_intro .wrapper .content button {
+    width: 100% !important;
+    font-size: 18px;
+  }
   .about_container .choose_us {
     display: block;
   }
@@ -250,6 +277,11 @@
   .about_container .choose_us .content {
     width: 100%;
     margin-top: 25px;
+  }
+  .about_container .choose_us .content button {
+    width: 100% !important;
+    margin-left: 0px !important;
+    font-size: 18px;
   }
   .about_container .satisfaction {
     padding: 0;

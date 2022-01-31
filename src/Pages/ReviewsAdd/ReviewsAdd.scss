@@ -1,0 +1,141 @@
+$main-color: #990012;
+$color2: #FCF6F6;
+$text-color: #06175B;
+
+.add_reviews_container {
+    .add_reviews_showcase {
+        width: 100%;
+        height: 50vh;
+        background: url('../../Assets/reviews_write.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        .ovrly {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+                to right, 
+                #990012, #9900127e, #99001200
+                        );
+
+            color: white;
+            display: flex;
+            align-items: center;
+
+            h1 {
+                font-size: 65px;
+                font-family: 'Roboto';
+                margin-left: 20%;
+            }
+        }
+    }
+
+    .add_form {
+        margin: 0 auto;
+        width: 70%;
+        margin-top: 35px;
+        h3 {
+            color: $text-color;
+            margin-bottom: 15px;
+        }
+
+        .messageBox{ 
+            width: 50%;
+            height: auto;
+            padding: 25px;
+            background-color: $main-color;
+            color: $color2;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .form {
+            input {
+                width: 33.3%;
+                height: 60px;
+                border-radius: 6px;
+                border: 1px solid rgb(128, 128, 128);
+                padding: 10px;
+                font-size: 19px;
+
+                &:nth-child(2) {
+                    margin-left: 20px;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            textarea {
+                display: block;
+                width: 68%;
+                height: 220px;
+                margin-top: 35px;
+                padding: 10px;
+                font-size: 19px;
+            }
+
+            button {
+                width: 20%;
+                height: 60px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                background-color: $main-color;
+                color: $color2;
+                border: none;
+                font-size: 17px;
+                font-weight: bolder;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 719px) { 
+
+    .add_reviews_showcase {
+        height: 40vh !important;
+
+            .ovrly {
+                h1 {
+                    font-size: 45px !important;
+                    margin-left: 25px !important;
+                }
+            }
+    }
+
+    .add_form {
+        width: 90% !important;
+
+        .messageBox {
+            width: 100% !important;
+        }
+
+
+        .form {
+            input {
+                display: block;
+                width: 100% !important;
+                margin: 0px !important;
+
+                &:nth-child(2) {
+                    margin-top: 25px !important;
+                }
+            }
+
+            textarea {
+                width: 100% !important;
+            }
+
+            button {
+                width: 100% !important;
+            }
+        }
+    }
+
+}

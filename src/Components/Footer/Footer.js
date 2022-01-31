@@ -2,6 +2,7 @@ import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/fre
 import { faCode, faCopyright, faEnvelope, faMapMarkerAlt, faPaperPlane, faPhone, faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 const Footer = () => {
     return (
@@ -9,7 +10,7 @@ const Footer = () => {
             <div className="contact_det">
                 <div className="address">
                     <FontAwesomeIcon icon={faMapMarkerAlt} />
-                    <p>77, Demo Street 45221. <br />Cincinnati OH</p>
+                    <p>8633 Cincinnati Columbus rd Unit 49 <br />Westchester OH 45069</p>
                 </div>
 
                 <div className="email">
@@ -19,7 +20,7 @@ const Footer = () => {
 
                 <div className="phone">
                     <FontAwesomeIcon icon={faPhone} />
-                    <p>+ 1513 228 7764</p>
+                    <p>+1 513 869 3801</p>
                 </div>
             </div>
 
@@ -29,26 +30,23 @@ const Footer = () => {
                         <img src={require('../../Assets/logo4.png')} alt="" />
                     </div>
                     <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide additional clickthroughs.</p>
-                    <button>Write A Review <FontAwesomeIcon icon={faStar} /></button>
+                   <Link to='/reviews/add'><button>Write A Review <FontAwesomeIcon icon={faStar} /></button></Link>
                 </div>
                 <div className="sec sec_2">
-                    <div className="title"><h1>Our Services</h1></div>
+                    <div className="title"><h1>Quick Links</h1></div>
                     <div className="ft_links">
-                        <p>Home</p>
-                        <p>About Us</p>
-                        <p>Book Appointment</p>
-                        <p>Part Sales</p>
-                        <p>Contact Us</p>
+                        <p><Link to='/'>Home</Link></p>
+                        <p><Link to='/about'>About Us</Link></p>
+                        <p><Link to='/appointment'>Book Appointment</Link></p>
+                        <p><Link to='/parts'>Part Sales</Link></p>
+                        <p><Link to='/contact'>Contact Us</Link></p>
                     </div>
                 </div>
                 <div className="sec sec_3">
-                <div className="title"><h1>Our Services</h1></div>
+                <div className="title"><h1>Quick Links</h1></div>
                     <div className="ft_links">
-                        <p>Home</p>
-                        <p>About Us</p>
-                        <p>Book Appointment</p>
-                        <p>Part Sales</p>
-                        <p>Contact Us</p>
+                        <p><Link to='/reviews'>View Review</Link></p>
+                        <p><Link to='/reviews/add'>Write Review</Link></p>
                     </div>
                 </div>
 
